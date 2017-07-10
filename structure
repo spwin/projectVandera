@@ -1,0 +1,48 @@
+WEBSITES
+=========
++id
+ parent
++domain
+ip
++ssl
++status
++date
++content
++headers
++cookies
+-sessions
+-built
++whois
+-scraped
++collected
+
+
+ROBOT 1
+1. get URLs where collected = 0 limit 1;
+2. collect all the information about URL
+3. scan for another URLs and add to the list of not exist
+4. set collected = 1
+
+
+
+
+CONTENT
+=========
+id
+website_id
+parent_id
+url
+status:
+    1 - connection timeout
+date
+content
+collected
+
+
+ROBOT 2
+1. get URLs where collected = 0 limit 20;
+2. get content
+3. scan for inner URLs and store in content table if not exist
+4. scan for outer URLs and store in websites table if not exist
+
+
