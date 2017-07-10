@@ -6,6 +6,8 @@ There are 2 Databases and 2 Robots.<br/><br/>
 **Robot 2** looking over the `contents` table and collecting all the content of inner pages
 <br/>
 Both are adding new links either to the `website` (if it is new domain) or `contents` table accordingly
+<br/>
+The first 500 websites are imported to the database from the file **top500domains.csv** located in project root.
 
 ## Running the project
 It was written using python3.5 so make sure you are using the same version to prevent any problems.
